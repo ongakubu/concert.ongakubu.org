@@ -34,36 +34,48 @@
   <meta property="article:tag" content="演奏会情報">
   
   <style>
-  table.concertinfo th {
-    font-size: 1.25em;
-    text-align: left;
-    vertical-align: text-bottom;
-    padding-left: 1em;
-    white-space: nowrap;
-    background-color: var(--background-color);
-  }
-  table.concertinfo td {
-    font-size: 1.25em;
-    text-align: left;
-    vertical-align: text-bottom;
-    background-color: var(--background-color);
-  }
-  ul.concertprogram {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  ol.concertprogram {
-    list-style-type: decimal;
-    padding-left: 20px;
-  }
-  details.concertlocation summary {
-    cursor: pointer;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  details.concertlocation summary::-webkit-details-marker {
-    display: none;
-  }
+    table.concertinfo th {
+      text-align: left;
+      vertical-align: text-bottom;
+      padding-left: 1em;
+      white-space: nowrap;
+      font-size: 1rem;
+      background-color: var(--background-color);
+    }
+    table.concertinfo td {
+      text-align: left;
+      vertical-align: text-bottom;
+      font-size: 1rem;
+      background-color: var(--background-color);
+    }
+    ul.concertprogram {
+      list-style-type: none;
+      font-size: 1rem;
+      padding-left: 0;
+    }
+    @media only screen and (min-width:48rem) {
+      ul.concertprogram {
+        font-size: 1rem;
+      }
+    }
+    ol.concertprogram {
+      list-style-type: decimal;
+      font-size: 1rem;
+      padding-left: 20px;
+    }
+    @media only screen and (min-width:48rem) {
+      ol.concertprogram {
+        font-size: 1rem;
+      }
+    }
+    details.concertlocation summary {
+      cursor: pointer;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    details.concertlocation summary::-webkit-details-marker {
+      display: none;
+    }
   :root {--ghost-accent-color: #22977f;}
   :root {--primary-subtle-color: var(--ghost-accent-color) !important;}
   .App {
